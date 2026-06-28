@@ -23,7 +23,7 @@
         .particle { position: fixed; width: 2px; height: 2px; background: #00ff88; border-radius: 50%; animation: float 8s infinite; z-index: 0; opacity: 0.4; }
         @keyframes float { 0%, 100% { transform: translateY(0) translateX(0); opacity: 0; } 50% { opacity: 0.6; } 100% { transform: translateY(-100vh) translateX(30px); opacity: 0; } }
         
-        .top-bar { border-bottom: 1px solid rgba(0,255,136,0.2); background: rgba(10,10,15,0.8); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 100; }
+        .top-bar { border-bottom: 1px solid rgba(255,0,0,0.2); background: rgba(10,10,15,0.8); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 100; }
         .header-container { max-width: 1200px; margin: auto; padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; }
         .logo { display: flex; align-items: center; gap: 8px; font-size: 1.2rem; font-weight: 900; }
         .logo i { color: #00ff88; }
@@ -42,7 +42,7 @@
         .menu-btn { background: none; border: none; color: rgba(255,255,255,0.7); cursor: pointer; }
         
         .hero { position: relative; z-index: 1; max-width: 800px; margin: auto; padding: 40px 20px 60px; text-align: center; }
-        .badge-online { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 50px; border: 1px solid rgba(0,255,136,0.3); background: rgba(0,0,0,0.4); font-size: 0.75rem; font-weight: bold; margin-bottom: 40px; }
+        .badge-online { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 50px; border: 1px solid rgba(255,0,0,0.3); background: rgba(0,0,0,0.4); font-size: 0.75rem; font-weight: bold; margin-bottom: 40px; }
         .badge-online .dot { width: 8px; height: 8px; background: #00ff88; border-radius: 50%; animation: pulse 2s infinite; }
         @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
         
@@ -50,29 +50,29 @@
         .hero .subtitulo { color: rgba(255,255,255,0.6); margin-bottom: 50px; font-size: 1rem; display: flex; align-items: center; justify-content: center; gap: 8px; }
         
         .stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; max-width: 400px; margin: 0 auto 24px; }
-        .stat-box { border: 1px solid rgba(0,255,136,0.3); border-radius: 16px; background: rgba(0,0,0,0.4); backdrop-filter: blur(5px); padding: 16px; display: flex; align-items: center; justify-content: center; gap: 12px; }
+        .stat-box { border: 1px solid rgba(255,0,0,0.3); border-radius: 16px; background: rgba(0,0,0,0.4); backdrop-filter: blur(5px); padding: 16px; display: flex; align-items: center; justify-content: center; gap: 12px; }
         .stat-box i { color: #00ff88; width: 20px; height: 20px; }
         .stat-box .num { font-size: 1.5rem; font-weight: bold; color: #00ff88; }
         .stat-box .label { font-size: 0.75rem; color: rgba(255,255,255,0.5); }
         
-        .soporte-box { display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(0,255,136,0.3); border-radius: 16px; background: rgba(0,0,0,0.4); padding: 12px 24px; margin-bottom: 50px; }
+        .soporte-box { display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(255,0,0,0.3); border-radius: 16px; background: rgba(0,0,0,0.4); padding: 12px 24px; margin-bottom: 50px; }
         .soporte-box i { color: #00ff88; width: 16px; height: 16px; }
         
         .btn-main { width: 100%; max-width: 350px; margin: 0 auto 16px; background: #00ff88; color: #0a0a0f; font-weight: 900; padding: 16px; border-radius: 16px; border: none; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; text-decoration: none; font-family: 'Orbitron'; font-size: 1rem; box-shadow: 0 0 20px rgba(0,255,136,0.4), 0 0 40px rgba(0,255,136,0.1); transition: 0.3s; }
         .btn-main:hover { transform: scale(1.05); }
         
-        .btn-second { width: 100%; max-width: 350px; margin: 0 auto; background: transparent; color: #00ff88; font-weight: 900; padding: 16px; border-radius: 16px; border: 2px solid rgba(0,255,136,0.5); display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; text-decoration: none; font-family: 'Orbitron'; font-size: 1rem; transition: 0.3s; }
-        .btn-second:hover { background: rgba(0,255,136,0.1); }
+        .btn-second { width: 100%; max-width: 350px; margin: 0 auto; background: transparent; color: #00ff88; font-weight: 900; padding: 16px; border-radius: 16px; border: 2px solid rgba(255,0,0,0.5); display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; text-decoration: none; font-family: 'Orbitron'; font-size: 1rem; transition: 0.3s; }
+        .btn-second:hover { background: rgba(255,0,0,0.1); }
         
         .section { padding: 60px 20px; max-width: 1200px; margin: auto; position: relative; z-index: 1; }
         .section-header { text-align: center; margin-bottom: 40px; }
-        .badge-section { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 50px; border: 1px solid rgba(0,255,136,0.3); background: rgba(0,0,0,0.4); font-size: 0.75rem; font-weight: bold; margin-bottom: 16px; }
+        .badge-section { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 50px; border: 1px solid rgba(255,0,0,0.3); background: rgba(0,0,0,0.4); font-size: 0.75rem; font-weight: bold; margin-bottom: 16px; }
         .section h2 { font-size: 2.5rem; font-weight: 900; }
         .section h2 .highlight { color: #00ff88; }
         
         .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
-        .product-card { border: 1px solid rgba(0,255,136,0.3); border-radius: 20px; background: rgba(0,0,0,0.4); backdrop-filter: blur(10px); padding: 24px; position: relative; transition: 0.3s; }
-        .product-card:hover { border-color: rgba(0,255,136,0.6); box-shadow: 0 0 30px rgba(0,255,136,0.2); }
+        .product-card { border: 1px solid rgba(255,0,0,0.3); border-radius: 20px; background: rgba(0,0,0,0.4); backdrop-filter: blur(10px); padding: 24px; position: relative; transition: 0.3s; }
+        .product-card:hover { border-color: rgba(255,0,0,0.6); box-shadow: 0 0 30px rgba(255,0,0,0.2); }
         .product-badge { position: absolute; top: 12px; right: 12px; padding: 4px 12px; border-radius: 50px; font-size: 0.7rem; font-weight: bold; background: #00ff88; color: #0a0a0f; }
         .product-icon { width: 100%; height: 100px; background: rgba(0,0,0,0.3); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
         .product-icon i { color: #00ff88; width: 48px; height: 48px; }
@@ -88,15 +88,15 @@
         .btn-comprar { flex: 1; background: #00ff88; color: #0a0a0f; font-weight: bold; padding: 14px; border-radius: 12px; border: none; display: flex; align-items: center; justify-content: center; gap: 6px; cursor: pointer; text-decoration: none; font-family: 'Orbitron'; transition: 0.3s; }
         .btn-comprar:hover { transform: scale(1.05); }
         
-        .creator-card { max-width: 500px; margin: 60px auto 0; border: 1px solid rgba(0,255,136,0.3); border-radius: 20px; background: rgba(0,0,0,0.4); backdrop-filter: blur(10px); padding: 40px; text-align: center; }
-        .creator-icon { width: 100px; height: 100px; margin: 0 auto 20px; border: 3px solid rgba(0,255,136,0.5); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+        .creator-card { max-width: 500px; margin: 60px auto 0; border: 1px solid rgba(255,0,0,0.3); border-radius: 20px; background: rgba(0,0,0,0.4); backdrop-filter: blur(10px); padding: 40px; text-align: center; }
+        .creator-icon { width: 100px; height: 100px; margin: 0 auto 20px; border: 3px solid rgba(255,0,0,0.5); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
         .creator-icon i { color: #00ff88; width: 48px; height: 48px; }
         .creator-badge { display: inline-flex; align-items: center; gap: 6px; padding: 6px 16px; border-radius: 50px; background: #00ff88; color: #0a0a0f; font-size: 0.75rem; font-weight: bold; margin-bottom: 16px; }
         .creator-name { font-size: 1.8rem; font-weight: 900; margin-bottom: 8px; }
         .creator-name .highlight { color: #00ff88; }
         .creator-role { color: rgba(255,255,255,0.6); margin-bottom: 20px; }
         
-        footer { border-top: 1px solid rgba(0,255,136,0.2); background: rgba(10,10,15,0.8); backdrop-filter: blur(10px); padding: 40px 20px; margin-top: 60px; position: relative; z-index: 1; }
+        footer { border-top: 1px solid rgba(255,0,0,0.2); background: rgba(10,10,15,0.8); backdrop-filter: blur(10px); padding: 40px 20px; margin-top: 60px; position: relative; z-index: 1; }
         .footer-content { max-width: 1200px; margin: auto; text-align: center; }
         .footer-logo { display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 1.3rem; font-weight: 900; margin-bottom: 12px; }
         .footer-logo i { color: #00ff88; }
@@ -178,7 +178,7 @@
         
         <div class="products-grid" id="productsGrid">
             <!-- DRIPCLIENT CRACKEAD-->
-            <div class="product-card" style="border-color: rgba(59,130,246,0.5);">
+            <div class="product-card" style="border-color: rgba(255,0,0,0.5);">
                 <span class="product-badge">APK MOD</span>
                 <div class="product-icon"><i data-lucide="users" style="color: #3b82f6;"></i></div>
                 <h3 class="product-title">DRIPCLIENT CRACKEAD</h3>
@@ -199,7 +199,7 @@
             </div>
 
 <!-- NetCheats-->
-            <div class="product-card" style="border-color: rgba(59,130,246,0.5);">
+            <div class="product-card" style="border-color: rgba(255,0,0,0.5);">
                 <span class="product-badge">APK</span>
                 <div class="product-icon"><i data-lucide="users" style="color: #3b82f6;"></i></div>
                 <h3 class="product-title">NetCheats</h3>
