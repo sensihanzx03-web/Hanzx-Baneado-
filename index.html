@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fake Ninja Lite - Key System</title>
+    <title>FAKE NINJA YT- CÓDIGOS PLAY</title>
     <!-- Librería oficial de Font Awesome para cargar los logotipos reales -->
     <link rel="stylesheet" href="https://cloudflare.com">
     <style>
@@ -170,11 +170,6 @@
             border: 1px solid #fe2c55;
         }
 
-        .youtube {
-            background: #FF0000;
-            cursor: pointer;
-        }
-
         /* Animación de aparición gradual */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
@@ -185,13 +180,13 @@
 <body>
 
     <div class="container">
-        <h1>Fake Ninja Lite</h1>
+        <h1>FAKE NINJA YT</h1>
         
         <div id="status" class="status-box">
-            Presiona el botón para verificar tu sesión y reclamar tu clave Lite.
+            Presiona el botón para verificar tu sesión y reclamar tu código Google Play.
         </div>
 
-        <button id="actionBtn" class="btn" onclick="generateLiteKey()">Obtener Clave Lite</button>
+        <button id="actionBtn" class="btn" onclick="generateLiteKey()">Obtener código Google Play</button>
 
         <div id="keyContainer" class="key-box">
             <div id="keyDisplay" class="key-text">XXXX XXXX XXXX XXXX</div>
@@ -202,17 +197,14 @@
         <div id="socialBox" class="social-container">
             <div class="social-title">¡Síguenos en nuestras redes!</div>
             
-            <a href="https://whatsapp.com" target="_blank" class="social-btn whatsapp">
+            <a href="https://whatsapp.com/channel/0029VbCp42xJUM2bFmbv860s" target="_blank" class="social-btn whatsapp">
                 <i class="fab fa-whatsapp"></i> Canal de WhatsApp
-            </a>
-            <a href="https://t.me" target="_blank" class="social-btn telegram">
-                <i class="fab fa-telegram"></i> Canal de Telegram
             </a>
             <a href="https://tiktok.com" target="_blank" class="social-btn tiktok">
                 <i class="fab fa-tiktok"></i> TikTok
             </a>
-            <a onclick="alert('¡El canal de YouTube estará disponible próximamente!')" class="social-btn youtube">
-                <i class="fab fa-youtube"></i> YouTube (Próximamente)
+            <a href="https://t.me" target="_blank" class="social-btn telegram">
+                <i class="fab fa-telegram"></i> Contacto Directo (Telegram)
             </a>
         </div>
     </div>
@@ -235,13 +227,13 @@
             const socialBox = document.getElementById('socialBox');
 
             actionBtn.disabled = true;
-            statusBox.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Autenticando credenciales Lite...';
+            statusBox.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Espera FAKE NINJA YT está aprobando tu solicitud...';
 
             setTimeout(() => {
-                statusBox.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Generando hash de acceso único...';
+                statusBox.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Generando tu Codigo Google Play...';
                 
                 setTimeout(() => {
-                    statusBox.innerHTML = '<i class="fas fa-check-circle" style="color: #25D366;"></i> ¡Clave Lite lista para usar!';
+                    statusBox.innerHTML = '<i class="fas fa-check-circle" style="color: #25D366;"></i> ¡Tu Codigo Google Play esta listo!';
                     
                     // Genera 4 bloques independientes y aleatorios
                     const b1 = generateBlock();
@@ -264,7 +256,7 @@
         function copyKey() {
             const keyText = document.getElementById('keyDisplay').innerText;
             navigator.clipboard.writeText(keyText).then(() => {
-                alert("¡Clave Lite copiada con éxito!");
+                alert("¡Codigo copiado con éxito!");
             });
         }
     </script>
