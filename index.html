@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FN Key System</title>
+    <title>Fake Ninja Key System</title>
     <style>
         * {
             margin: 0;
@@ -115,7 +115,7 @@
 <body>
 
     <div class="container">
-        <h1>FN Key System</h1>
+        <h1>Fake Ninja System</h1>
         
         <div id="status" class="status-box">
             Presiona el botón para verificar y generar tu clave.
@@ -124,13 +124,13 @@
         <button id="actionBtn" class="btn" onclick="startProcess()">Obtener Clave</button>
 
         <div id="keyContainer" class="key-box">
-            <div id="keyDisplay" class="key-text">Cargando...</div>
+            <!-- Corregido el texto por defecto aquí -->
+            <div id="keyDisplay" class="key-text">FAKE-NINJA-XXXXX-XXXXX</div>
             <button class="copy-btn" onclick="copyKey()">Copiar Clave</button>
         </div>
     </div>
 
     <script>
-        // Función para generar bloques aleatorios de letras y números
         function makeBlock(length) {
             let result = '';
             const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
@@ -155,11 +155,10 @@
                 setTimeout(() => {
                     statusBox.innerHTML = "¡Clave generada con éxito!";
                     
-                    // Genera los dos bloques aleatorios de 5 dígitos cada uno
                     const block1 = makeBlock(5);
                     const block2 = makeBlock(5);
                     
-                    // Une todo con el prefijo solicitado
+                    // Aquí genera el formato correcto
                     const generatedKey = `FAKE-NINJA-${block1}-${block2}`;
                     
                     document.getElementById('keyDisplay').innerText = generatedKey;
