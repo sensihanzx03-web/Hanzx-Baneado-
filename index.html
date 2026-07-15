@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fake Ninja Lite - Key System</title>
+    <!-- Librería oficial para cargar los logotipos reales -->
+    <link rel="stylesheet" href="https://cloudflare.com">
     <style>
         * {
             margin: 0;
@@ -110,6 +112,61 @@
             background: #ff007f;
             color: #ffffff;
         }
+
+        /* Sección de Redes Sociales */
+        .social-container {
+            display: none;
+            margin-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 1.5rem;
+        }
+
+        .social-title {
+            font-size: 0.9rem;
+            color: #aaa;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 0.75rem;
+            border-radius: 6px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95rem;
+            transition: transform 0.2s, filter 0.2s;
+        }
+
+        .social-btn i {
+            font-size: 1.2rem;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.15);
+        }
+
+        .whatsapp {
+            background: #25D366;
+        }
+
+        .tiktok {
+            background: #000000;
+            border: 1px solid #fe2c55;
+        }
+
+        .youtube {
+            background: #FF0000;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -124,9 +181,23 @@
         <button id="actionBtn" class="btn" onclick="generateLiteKey()">Obtener Clave Lite</button>
 
         <div id="keyContainer" class="key-box">
-            <!-- Texto inicial corregido a 4 espacios -->
             <div id="keyDisplay" class="key-text">FAKE-NINJA-LITE-XXXX</div>
             <button class="copy-btn" onclick="copyKey()">Copiar Clave</button>
+        </div>
+
+        <!-- Botones con logotipos oficiales integrados -->
+        <div id="socialBox" class="social-container">
+            <div class="social-title">¡Síguenos en nuestras redes!</div>
+            
+            <a href="https://whatsapp.com" target="_blank" class="social-btn whatsapp">
+                <i class="fab fa-whatsapp"></i> Canal de WhatsApp
+            </a>
+            <a href="https://tiktok.com" target="_blank" class="social-btn tiktok">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+            <a onclick="alert('¡El canal de YouTube estará disponible próximamente!')" class="social-btn youtube">
+                <i class="fab fa-youtube"></i> YouTube (Próximamente)
+            </a>
         </div>
     </div>
 
@@ -135,6 +206,7 @@
             const statusBox = document.getElementById('status');
             const actionBtn = document.getElementById('actionBtn');
             const keyContainer = document.getElementById('keyContainer');
+            const socialBox = document.getElementById('socialBox');
 
             actionBtn.disabled = true;
             statusBox.innerHTML = "Autenticando credenciales Lite...";
@@ -145,7 +217,6 @@
                 setTimeout(() => {
                     statusBox.innerHTML = "¡Clave Lite lista para usar!";
                     
-                    // Modificado estrictamente para generar solo 4 caracteres aleatorios
                     let randomSequence = '';
                     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
                     for (let i = 0; i < 4; i++) {
@@ -156,6 +227,7 @@
                     
                     document.getElementById('keyDisplay').innerText = finalKey;
                     keyContainer.style.display = "block";
+                    socialBox.style.display = "block"; 
                     actionBtn.style.display = "none";
                 }, 1500);
 
